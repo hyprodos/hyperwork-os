@@ -63,6 +63,7 @@ install:
   - swaylock
   - swayidle
   - kanshi
+  - hyprpaper
 
 # terminal
   - foot

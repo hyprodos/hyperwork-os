@@ -1,0 +1,14 @@
+[SddmGreeterTheme]
+Name=mac
+Description=apple like style
+Author=zayronxio
+Copyright=(c) 2024, hyprodos
+License=gpl3.0
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/hyprodOs/hyperwork-os
+Screenshot=screenshot.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=mac
+Theme-API=2.0
