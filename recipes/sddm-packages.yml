@@ -4,9 +4,11 @@ install:
   - sddm-themes
   - qt5-qtgraphicaleffects
   - qt5-qtquickcontrols2
-  - plasma-framework-devel
+  - plasma-workspace-devel
   - kf5-plasma-devel
-  - qt5-qml-devel
+  - kf5-plasma
+  - kf5-plasma-devel
+  - kf5-frameworkintegration-devel
   - qt5-qtsvg
   - kwallet
   - pam-kwallet
