@@ -60,8 +60,8 @@ install:
   - wlr-randr
   - wlsunset
   - brightnessctl
-  - swaylock
-  - swayidle
+  - hyprlock
+  - hypridle
   - kanshi
   - hyprpaper
 
