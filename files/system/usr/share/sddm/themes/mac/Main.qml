@@ -406,10 +406,10 @@ Column {
                         layer.effect: OpacityMask {
                             maskSource: mask
                         }
-                        source: "/var/lib/AccountsService/icons/" + user.currentText
+                        source: "/var/share/sddm/mac/faces/" + user.currentText
                         onStatusChanged: {
                             if (status == Image.Error)
-                                return source = "images/.face.icon"
+                                return source = "/var/home/research/Pictures/hyprlock-img/.face.icon"
                         }
                          MouseArea {
                            anchors.fill: ava
