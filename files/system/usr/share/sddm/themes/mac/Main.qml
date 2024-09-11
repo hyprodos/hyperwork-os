@@ -190,7 +190,7 @@ Row {
                         highlighted: session.highlightedIndex === index
                         hoverEnabled: session.hoverEnabled
                         onClicked: {
-                            ava.source = "/var/lib/AccountsService/icons/" + user.currentText
+                            ava.source = "/usr/share/sddm/themes/mac/faces/research.png"
                             session.currentIndex = index
                             slistview.currentIndex = index
                             session.popup.close()
@@ -364,7 +364,7 @@ Column {
                            anchors.fill: parent
                            onClicked: {
                                user.currentIndex = index
-                               ava.source = "/usr/share/sddm/mac/faces/research.png"
+                               ava.source = "/usr/share/sddm/themes/mac/faces/research.png"
                                listuser.visible = false
                                ava.visible = true
                                userModel.lastIndex = index
@@ -406,7 +406,7 @@ Column {
                         layer.effect: OpacityMask {
                             maskSource: mask
                         }
-                        source: "/usr/share/sddm/mac/faces/research.png"
+                        source: "/usr/share/sddm/themes/mac/faces/research.png"
                         onStatusChanged: {
                             if (status == Image.Error)
                                 return source = "/var/home/research/Pictures/hyprlock-img/me.png"
