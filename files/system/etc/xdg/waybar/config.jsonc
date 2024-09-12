@@ -3,42 +3,25 @@
     "position": "top",
     "margin-bottom": 0,
     "modules-left": [
-      "clock",
+      "custom/powermenu",
       "hyprland/workspaces",
       "custom/updates",
       "tray",
       ],
     "modules-center": [
-      "hyprland/window",
+      "mpris",
       ],
     "modules-right": [
-      "network",
       "temperature",
       "memory",
       "cpu",
       "pulseaudio",
-      "custom/powermenu",
+      "clock",
+      
     ],
     "tray": {
       "icon-size": 24,
       "spacing": 10
-    },
-    "hyprland/window": {
-      "format": " {}",
-      "rewrite": {
-          "(\\d\\. )?(.*) - Chromium": "<span color=\"#4285F4\"></span>  $2 ",
-          "nvim (.*)": "<span color=\"#57A143\"></span>  $1",
-          "nvim": "<span color=\"#57A143\">  Neovim</span> ",
-          "ranger(.*)": "<span color=\"#ffffff\"></span>  $1",
-          //"kitty (.*)": "<span color=\"#ffffff\"></span>  $1",
-          "Search(.*)": "<span color=\"#a855f7\"></span>  Search$1",
-      },
-      "separate-outputs": false
-    },
-    "hyprland/submap": {
-      "format": "✌️ {}",
-      "max-length": 8,
-      "tooltip": true
     },
     "hyprland/workspaces": {
       "format": "{icon}",
@@ -54,11 +37,14 @@
         "default": ""
       }
     },
-    "network": {
-      "interface": "enp34s0",
-      "tooltip-format-ethernet": "{ifname} ",
-      "interval": 2,
-      "format": " {bandwidthDownBits}  {bandwidthUpBits}",
+    "mpris": {
+      "player": "spotify",  // Change this to your media player (e.g., spotify, vlc, etc.)
+      "format": "{artist} - {title}",  // Customize what information to display
+      "max-length": 30,  // Limit the number of characters
+      "interval": 5,  // Refresh interval in seconds
+      "on-click": "playerctl play-pause",  // Command to execute on click
+      "on-scroll-up": "playerctl next",  // Next song on scroll up
+      "on-scroll-down": "playerctl previous"  // Previous song on scroll down
     },
     "temperature": {
       "format": "{icon} {temperatureC}°C",
