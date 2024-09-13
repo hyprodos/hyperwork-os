@@ -5,24 +5,16 @@
     "modules-left": [
       "custom/powermenu",
       "hyprland/workspaces",
-      "custom/updates",
-      "tray",
       ],
     "modules-center": [
       "mpris",
       ],
     "modules-right": [
-      "temperature",
-      "memory",
-      "cpu",
+      "group/hardware",
       "pulseaudio",
       "clock",
       
     ],
-    "tray": {
-      "icon-size": 24,
-      "spacing": 10
-    },
     "hyprland/workspaces": {
       "format": "{icon}",
       "format-icons": {
@@ -47,6 +39,31 @@
       "on-click": "playerctl play-pause",  // Command to execute on click
       "on-scroll-up": "playerctl next",  // Next song on scroll up
       "on-scroll-down": "playerctl previous"  // Previous song on scroll down
+    },    
+    "custom/powermenu": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "exec wlogout -p layer-shell",
+    },
+    "group/hardware": {
+      "orientation": "inherit",
+      "drawer": {
+          "transition-duration": 500,
+          "children-class": "not-lab",
+          "transition-left-to-right": true,
+      },
+      "modules": [
+        "custom/sensors",
+        "temperature",
+        "cpu",
+        "memory"
+      ]
+    },
+    "custom/sensors": {
+      "format": "{icon}",
+      "format-icons": ["󰂕", "󱉀", "󰂓", "󱉂", "󰂔", "󱈾" ],
+      "interval": 3600,
+      "exec": "exec $HOME/.config/waybar/sensors.sh"
     },
     "temperature": {
       "format": "{icon} {temperatureC}°C",
@@ -61,17 +78,6 @@
     "cpu": {
       "format": " {usage}%",
       "tooltip": "false"
-    },
-    "custom/powermenu": {
-      "format": "",
-      "tooltip": false,
-      "on-click": "exec wlogout -p layer-shell",
-    },
-    "custom/updates": {
-      "format": "<span color=\"#61afef\"></span> {}",
-      "tooltip": false,
-      "interval": 3600,
-      "exec": "exec $HOME/.config/waybar/checkupdate.sh"
     },
     "pulseaudio": {
       "format": "{volume}% {icon}",
