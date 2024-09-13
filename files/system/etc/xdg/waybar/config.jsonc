@@ -25,7 +25,6 @@
     },
     "hyprland/workspaces": {
       "format": "{icon}",
-      "persistent_workspaces": true,
       "format-icons": {
         "1": "󰲠",
         "2": "󰲢",
@@ -35,7 +34,10 @@
         "-99": "",
         "active": "",
         "default": ""
-      }
+      },
+       "persistent-workspaces": {
+             "*": 5, // 5 workspaces by default on every monitor
+       }
     },
     "mpris": {
       "player": "spotify",  // Change this to your media player (e.g., spotify, vlc, etc.)
@@ -61,7 +63,7 @@
       "tooltip": "false"
     },
     "custom/powermenu": {
-      "format": "",
+      "format": "",
       "tooltip": false,
       "on-click": "exec wlogout -p layer-shell",
     },
