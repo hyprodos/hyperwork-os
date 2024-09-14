@@ -62,7 +62,7 @@
     "custom/sensors": {
       "format": "{icon}",
       "format-icons": ["󰂕", "󱉀", "󰂓", "󱉂", "󰂔", "󱈾" ],
-      "interval": 3600,
+      "tooltip": false,
       "exec": "exec $HOME/.config/waybar/sensors.sh"
     },
     "temperature": {

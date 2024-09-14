@@ -22,7 +22,8 @@
   color: #fa5aa4;
 }
 
-#custom-powermenu,
+#hardware,
+#custom-sensors,
 #cpu,
 #temperature,
 #memory,
@@ -30,7 +31,6 @@
 #clock,
 #window,
 #pulseaudio,
-#custom-updates,
 #network {
   padding: 4px 8px;
   background-color: #303643;
@@ -51,6 +51,7 @@
 }
 
 #custom-powermenu {
+  background-color: transparent;
   color: #41a6b5;  
 }
 
