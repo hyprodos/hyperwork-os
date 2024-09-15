@@ -23,7 +23,7 @@
 }
 
 #hardware{  
-  background-color: #303643;  
+  background-color: transparent;  
 }
 
 #custom-sensors,
@@ -33,8 +33,7 @@
 #workspaces,
 #clock,
 #window,
-#pulseaudio,
-#network {
+#controls{
   padding: 4px 8px;
   background-color: #303643;
   border-radius: 30px;
@@ -75,7 +74,7 @@
 }
 
 #pulseaudio {
-  color: #0fb9b1;
+  color: #fff;
   padding-right: 14px;
 }
 
@@ -91,8 +90,16 @@
   color: #e5c07b;
 }
 
+#idle_inhibitor {
+  color: #fff;  
+}
+
+#power-profiles-daemon {
+  color: #fff;  
+}
+
 #network {
-  color: #c678dd;
+  color: #fff;
   min-width: 200px;
 }
 

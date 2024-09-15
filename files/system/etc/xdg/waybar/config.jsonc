@@ -25,7 +25,7 @@
         "5": "󰲨",
         "-99": "",
         "active": "",
-        "default": ""
+        "empty": ""
       },
        "persistent-workspaces": {
              "*": 5, // 5 workspaces by default on every monitor
@@ -123,7 +123,7 @@
       "interval": 10
     },
     "pulseaudio": {
-      "format": "{volume}% {icon}",
+      "format": "{icon}",
       "format-bluetooth": "{volume}% {icon}",
       "format-muted": "",
       "format-icons": {
