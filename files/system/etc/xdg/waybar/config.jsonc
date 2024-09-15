@@ -11,7 +11,7 @@
       ],
     "modules-right": [
       "group/hardware",
-      "pulseaudio",
+      "group/controls",
       "clock",
       
     ],
