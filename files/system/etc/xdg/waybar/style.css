@@ -46,13 +46,25 @@
   margin-left: 4px;
 }
 
-#custom-updates {
-  color: #1788e4;
+#custom-sensors.cpu-temp {
+  color: #98c379;
+}
+
+#custom-sensors.cpu-usage {
+  color: #61afef;
+}
+
+#custom-sensors.ram-usage {
+  color: #e5c07b;
 }
 
 #custom-powermenu {
+  font-size: 18px;
+  padding: 4px 8px; 
+  border-radius: 30px;
   background-color: transparent;
-  color: #41a6b5;  
+  color: #41a6b5;
+  margin: 6px 4px; 
 }
 
 #scratchpad {

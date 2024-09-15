@@ -60,11 +60,12 @@
       ]
     },
     "custom/sensors": {
-      "format": "{icon}",
-      "format-icons": ["󰂕", "󱉀", "󰂓", "󱉂", "󰂔", "󱈾" ],
+      "format": "{}",
+      "exec": "exec $HOME/.config/waybar/sensors.sh",
+      "interval": 10,
       "tooltip": false,
-      "exec": "exec $HOME/.config/waybar/sensors.sh"
-    },
+      "return-type": "json"
+    },    
     "temperature": {
       "format": "{icon} {temperatureC}°C",
       "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
