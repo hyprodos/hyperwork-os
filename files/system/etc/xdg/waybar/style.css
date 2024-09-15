@@ -22,7 +22,10 @@
   color: #fa5aa4;
 }
 
-#hardware,
+#hardware{  
+  background-color: #303643;  
+}
+
 #custom-sensors,
 #cpu,
 #temperature,
@@ -59,12 +62,10 @@
 }
 
 #custom-powermenu {
-  font-size: 18px;
+  font-size: 22px;
   padding: 4px 8px; 
-  border-radius: 30px;
   background-color: transparent;
-  color: #41a6b5;
-  margin: 6px 4px; 
+  color: #41a6b5;  
 }
 
 #scratchpad {

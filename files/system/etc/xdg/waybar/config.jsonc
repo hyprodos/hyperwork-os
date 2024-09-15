@@ -50,6 +50,7 @@
       "drawer": {
           "transition-duration": 500,
           "children-class": "not-lab",
+          "click-to-reveal": true,
           "transition-left-to-right": true,
       },
       "modules": [
@@ -79,6 +80,47 @@
     "cpu": {
       "format": " {usage}%",
       "tooltip": "false"
+    },
+    "group/controls": {
+      "orientation": "inherit",
+      "modules": [
+        "power-profiles-daemon",
+        "idle_inhibitor",
+        "network",       
+        "pulseaudio"
+      ]
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+          "activated": "",
+          "deactivated": ""
+      }
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+    "network": {
+      "interface": "wlan0",  // Replace this with your actual network interface
+      "format": "{icon}",    // Show only the icon
+      "format-alt": "{icon}",
+      "format-icons": {
+        "signal-0": "󰤮",  // No signal (using a Nerd Font icon)
+        "signal-1": "󰤟",  // Weak signal
+        "signal-2": "󰤢",  // Moderate signal
+        "signal-3": "󰤥",  // Strong signal
+        "signal-4": "󰤨"   // Full signal
+      },
+      "tooltip-format": "{ssid} {ipaddr}/{cidr}\nSignal: {signalStrength}%",  // Tooltip shows SSID and more info
+      "interval": 10
     },
     "pulseaudio": {
       "format": "{volume}% {icon}",
