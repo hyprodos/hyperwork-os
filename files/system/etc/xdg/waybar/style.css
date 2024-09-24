@@ -91,16 +91,21 @@
 }
 
 #idle_inhibitor {
-  color: #fff;  
+  padding: 4px 8px;
+  color: #fff;
+  margin: 6px 4px;  
 }
 
 #power-profiles-daemon {
-  color: #fff;  
+  padding: 4px 8px;
+  color: #fff;
+  margin: 6px 4px;    
 }
 
 #network {
+  margin: 6px 4px;  
   color: #fff;
-  min-width: 200px;
+  margin: 6px 4px; 
 }
 
 #clock {
