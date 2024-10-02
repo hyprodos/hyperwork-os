@@ -68,8 +68,8 @@
 }
 
 #custom-powermenu {
-  font-size: 22px;
-  padding: 4px 8px; 
+  font-size: 24px;
+  padding: 4px 10px; 
   background-color: transparent;
   color: #41a6b5;  
 }
@@ -98,21 +98,21 @@
 }
 
 #idle_inhibitor {
-  padding: 4px 8px;
+  
   color: #fff;
-  margin: 6px 4px;  
+  
 }
 
 #power-profiles-daemon {
-  padding: 4px 8px;
+  
   color: #fff;
-  margin: 6px 4px;    
+     
 }
 
 #network {
-  margin: 6px 4px;  
+    
   color: #fff;
-  margin: 6px 4px; 
+  
 }
 
 #clock {
