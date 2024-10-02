@@ -98,19 +98,19 @@
 }
 
 #idle_inhibitor {
-  
+  padding-right: 8px;
   color: #fff;
   
 }
 
 #power-profiles-daemon {
-  
+  padding-right: 8px;
   color: #fff;
      
 }
 
 #network {
-    
+  padding-right: 8px;  
   color: #fff;
   
 }
