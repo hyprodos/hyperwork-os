@@ -36,7 +36,7 @@
 #controls{
   padding: 4px 8px;
   background-color: #303643;
-  border-radius: 30px;
+  border-radius: 20px;
   margin: 6px 4px;
 }
 
@@ -51,7 +51,7 @@
 #custom-sensors{
   padding: 4px 12px;
   background-color: #303643;
-  border-radius: 30px;
+  border-radius: 20px;
   margin: 6px 4px;
 }
 

@@ -78,7 +78,7 @@
       "tooltip": "false"
     },
     "cpu": {
-      "format": " {usage}%",
+      "format": "  {usage}%",
       "tooltip": "false"
     },
     "group/controls": {
@@ -111,7 +111,7 @@
     "network": {
     "format": "{ifname}",
     "format-wifi": "   {signalStrength}%",
-    "format-ethernet": "󰈀  {ifname}",
+    "format-ethernet": "󰈀",
     "format-disconnected": "Disconnected",
     "tooltip-format": "󰈀 {ifname} via {gwaddri}",
     "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
