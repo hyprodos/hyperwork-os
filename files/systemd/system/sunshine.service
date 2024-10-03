@@ -9,4 +9,4 @@ RestartSec=5s
 
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=graphical-session.target
