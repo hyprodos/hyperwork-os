@@ -1,6 +1,8 @@
 [Unit]
 Description=Sunshine Game Streaming Service
-After=network.target
+StartLimitIntervalSec=500
+
+StartLimitBurst=5
 
 [Service]
 ExecStart=/usr/bin/sunshine   # Adjust the path if Sunshine is installed elsewhere
