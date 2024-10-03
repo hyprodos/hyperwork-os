@@ -1,0 +1,12 @@
+[Unit]
+Description=Sunshine Game Streaming Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/sunshine   # Adjust the path if Sunshine is installed elsewhere
+Restart=on-failure
+RestartSec=5s
+
+
+[Install]
+WantedBy=multi-user.target
