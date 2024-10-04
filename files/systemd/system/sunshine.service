@@ -4,14 +4,14 @@ Description=Sunshine Game Streaming Service
 StartLimitIntervalSec=500
 StartLimitBurst=5
 
-After=graphical-session.target
+# After=xdg-desktop-autostart.target
 
 [Service]
-ExecStart=/usr/bin/sunshine  '~/.config/sunshine/sunshine.conf'
+ExecStart=/usr/bin/sunshine  '/var/home/research/.config/sunshine/sunshine.conf'
 ExecStartPre=/usr/bin/sleep 10
 Restart=on-failure
 RestartSec=5s
 
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=xdg-desktop-autostart.target
