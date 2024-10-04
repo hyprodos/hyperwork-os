@@ -1,9 +1,10 @@
 [Unit]
 Description=Sunshine Game Streaming Service
-After=sddm.service
-StartLimitIntervalSec=500
 
+StartLimitIntervalSec=500
 StartLimitBurst=5
+
+After=graphical-session.target
 
 [Service]
 ExecStart=/usr/bin/sunshine   # Adjust the path if Sunshine is installed elsewhere
