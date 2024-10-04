@@ -1,5 +1,6 @@
 [Unit]
 Description=Sunshine Game Streaming Service
+After=sddm.service
 StartLimitIntervalSec=500
 
 StartLimitBurst=5
