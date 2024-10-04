@@ -14,4 +14,4 @@ RestartSec=5s
 
 
 [Install]
-WantedBy=xdg-desktop-autostart.target
+WantedBy=graphical.target
