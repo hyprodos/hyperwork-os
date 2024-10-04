@@ -7,7 +7,7 @@ StartLimitBurst=5
 After=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/sunshine   # Adjust the path if Sunshine is installed elsewhere
+ExecStart=/usr/bin/sunshine  '~/.config/sunshine/sunshine.conf'
 ExecStartPre=/usr/bin/sleep 10
 Restart=on-failure
 RestartSec=5s
