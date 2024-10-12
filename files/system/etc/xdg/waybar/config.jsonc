@@ -43,7 +43,7 @@
     "custom/powermenu": {
       "format": "",
       "tooltip": false,
-      "on-click": "exec wlogout -p layer-shell",
+      "on-click": "eww open powermenu",
     },
     "group/hardware": {
       "orientation": "inherit",
@@ -142,6 +142,7 @@
       "format": "{:%H:%M}",
       "interval": 60,
       "tooltip": true,
-      "tooltip-format": "{:%d %B %H:%M}"
+      "tooltip-format": "{:%d %B %H:%M}",
+      "on-click": "eww open calendar-closer && eww open calendar"
     }
 }
